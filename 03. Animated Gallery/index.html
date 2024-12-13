@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Gallery</title>
+    <link rel="stylesheet" href="/03. Photo Album/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            margin: 0;
+            background-color: #E4E0E1;
+            font-family: League Spartan;
+        }
+
+        .title{
+            text-align: center;
+            padding: 10px;
+        }
+
+        .title p {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 50px;
+            gap: 70px; 
+        }
+        
+        .col1, .col2 {
+            width: 20%;
+            padding: 10px 10px 20px 10px;
+            border: 5px solid peachpuff;
+            box-shadow: 10px 10px 5px 0 chocolate;
+            transform: rotate(7deg);
+            transition: transform 0.3s ease;
+            margin: 0; 
+            background-color: #FAF6F0;
+        }
+
+        .col1 span , .col2 span {
+            font-weight: bold; 
+        }
+
+        .col1 img , .col2 img {
+            margin-bottom: 10px;
+        }
+        
+        .col2 {
+            transform: rotate(-8deg);
+        }
+        
+        .col1:hover, .col2:hover {
+            transform: rotate(0deg);
+        }
+        
+        @media screen and (max-width: 600px) {
+            .col1, .col2 {
+                width: 70%;
+            }
+        }
+        
+      
+    </style>
+
+
+
+
+
+
+
+</head>
+<body>
+
+    <div class="title">
+
+        <p>Our Best Sellers</p>
+
+    </div>
+    
+    <div class="row">
+
+        <div class="col1">
+            <img src="/03. Animated Gallery/images/img1.jpeg" width="100%" height="auto">
+            <span>Graham Caramel Coffee</span>
+            <p class="desc1">
+                Graham Caramel Coffee is a delightful blend of smooth coffee, sweet caramel,
+                and the comforting crunch of graham. Perfectly crafted to satisfy your sweet 
+                cravings while delivering a rich, energizing coffee experience. 
+                Sip into bliss with every cup!
+            </p>
+        </div>
+
+        <div class="col2">
+            <img src="/03. Animated Gallery/images/img2.jpeg" width="100%" height="auto">
+            <span>Hazelnut Coffee</span>
+            <p class="desc1">
+                Hazelnut coffee offers a delightful blend of rich, nutty flavors and smooth, aromatic coffee.
+                Perfectly balanced with a creamy texture, 
+                it’s a comforting and indulgent treat for coffee lovers seeking a hint of sweetness in every sip.
+            </p>
+        </div>
+
+        <div class="col1">
+            <img src="/03. Animated Gallery/images/img3.jpeg" width="100%" height="auto">
+            <span>Creamy Latte </span>
+            <p class="desc1">
+                Creamy latte is a smooth blend of rich espresso and steamed milk, offering a velvety texture and balanced flavor. 
+                Perfect plain or with a hint of sweetness, it’s a luxurious coffee treat for any time of day.
+            </p>
+        </div>
+
+
+        <div class="col2">
+            <img src="/03. Animated Gallery/images/img4.jpeg" width="100%" height="auto">
+            <span>Caramel Macchiato </span>
+            <p class="desc1">
+                Caramel macchiato is a rich espresso-based drink layered with steamed milk, a touch of vanilla, 
+                and a sweet caramel drizzle. Its bold yet smooth flavor makes it a perfect indulgence for coffee lovers.
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>
